@@ -49,7 +49,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 					<p class='font-medium'>Available for hire</p>
 				</a>
 				<div class='flex flex-wrap justify-center gap-x-7 gap-y-3'>
-					<Label title='iOS & Android Developer'>
+					<Label title='Mobile Developer'>
 						<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' class='h-5 w-5' slot='icon'
 							><path
 								fill='currentColor'
@@ -107,59 +107,21 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 			)
 		} -->
 
-		<Section title='Experience'>
-			<Card
-				heading='ruwido'
-				subheading='iOS & Android Developer'
-				date='2022 - Present'
-				imagePath=''
-				altText='Lorem, ipsum dolor sit'
-				imageClass='h-12 w-auto md:-left-16'
-			>
-				<ul class='ml-4 list-disc text-muted-foreground'>
-					<li>
-						Contributed significantly to the development of multiple cross-platform Flutter
-						applications, ensuring consistent and engaging user interfaces on iOS and Android
-						devices.
-						<li>
-							Applied in-depth knowledge of Flutter's widget-based architecture to optimize
-							application performance and deliver responsive, visually appealing interfaces.
-						</li>
-					</li>
-				</ul>
-			</Card>
-			<Card
-				heading='E-Group'
-				subheading='Software Developer'
-				date='2019 - 2022'
-				imagePath=''
-				altText='Lorem, ipsum dolor sit'
-				imageClass='h-12 w-auto md:-left-16'
-			>
-				<ul class='ml-4 list-disc text-muted-foreground'>
-					<li>
-						Started as a backend and frontend developer. Worked with React, Angular, Java, Spring
-						Boot.
-
-						<li>Transitioned to Data Science and Machine Learning.</li>
-					</li>
-				</ul>
-			</Card>
-		</Section>
-
-		<Section title='Education'>
-			<Card
-				heading='University of Pecs'
-				subheading='Computer Science Engineering'
-				date='2016 - 2021'
-				imagePath=''
-				altText='Lorem, ipsum dolor sit'
-				imageClass='h-12 w-auto md:-left-16'
-			>
-				<ul class='ml-4 list-disc text-muted-foreground'>
-					<li>Won a full scholarship.</li>
-				</ul>
-			</Card>
+		<Section title='Services'>
+			<ul class='ml-4 list-disc text-muted-foreground'>
+				<li>
+					<strong>Flutter App Development</strong>: Custom mobile applications tailored to your
+					business needs.
+				</li>
+				<li>
+					<strong>UI/UX Design</strong>: Creating user-friendly interfaces that enhance user
+					experience.
+				</li>
+				<li>
+					<strong>Consulting Services</strong>: Expert advice on mobile app strategy and
+					development.
+				</li>
+			</ul>
 		</Section>
 
 		<Section title='Projects'>
@@ -188,27 +150,6 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 					class='w-full sm:w-1/4'
 				/>
 			</div>
-		</Section>
-
-		<Section title='Certifications'>
-			<Card
-				as='a'
-				heading='FCE - English Proficiency'
-				subheading='Cambridge University'
-				date='2016'
-				imagePath=''
-				altText=''
-				imageClass='h-11 w-auto md:-left-16'
-				href=''
-			/>
-		</Section>
-
-		<Section title='Skills'>
-			<SkillLayout title='Programming Languages' skills={planguages} />
-			<SkillLayout title='Frontend' skills={frontend} />
-			<SkillLayout title='Backend' skills={backend} />
-			<SkillLayout title='Others' skills={others} />
-			<SkillLayout title='Languages' skills={languages} />
 		</Section>
 	</div>
 </PageLayout>

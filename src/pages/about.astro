@@ -1,0 +1,91 @@
+---
+import PageLayout from '../layouts/BaseLayout.astro'
+import Section from '../components/Section.astro'
+import Card from '../components/Card.astro'
+import SkillLayout from '../components/SkillLayout.astro'
+
+const planguages = ['Swift', 'JavaScript', 'Python', 'Dart', 'Kotlin']
+const languages = ['English', 'Macedonian', 'German', 'Serbian', 'Russian']
+const frontend = ['Flutter', 'React Native', 'React', 'SwiftUI']
+const backend = ['Django', 'Spring Boot', 'Node.js', 'Express.js']
+const others = ['Git', 'GitHub', 'Figma', 'Adobe XD', 'Figma']
+---
+
+<PageLayout meta={{ title: 'About Me' }}>
+	<div class='flex w-full flex-col gap-y-10'>
+		<Section title='Experience'>
+			<Card
+				heading='ruwido'
+				subheading='iOS & Android Developer'
+				date='2022 - Present'
+				imagePath=''
+				altText='Lorem, ipsum dolor sit'
+				imageClass='h-12 w-auto md:-left-16'
+			>
+				<ul class='ml-4 list-disc text-muted-foreground'>
+					<li>
+						Contributed significantly to the development of multiple cross-platform Flutter
+						applications, ensuring consistent and engaging user interfaces on iOS and Android
+						devices.
+						<li>
+							Applied in-depth knowledge of Flutter's widget-based architecture to optimize
+							application performance and deliver responsive, visually appealing interfaces.
+						</li>
+					</li>
+				</ul>
+			</Card>
+			<Card
+				heading='E-Group'
+				subheading='Software Developer'
+				date='2019 - 2022'
+				imagePath=''
+				altText='Lorem, ipsum dolor sit'
+				imageClass='h-12 w-auto md:-left-16'
+			>
+				<ul class='ml-4 list-disc text-muted-foreground'>
+					<li>
+						Started as a backend and frontend developer. Worked with React, Angular, Java, Spring
+						Boot.
+						<li>Transitioned to Data Science and Machine Learning.</li>
+					</li>
+				</ul>
+			</Card>
+		</Section>
+
+		<Section title='Education'>
+			<Card
+				heading='University of Pecs'
+				subheading='Computer Science Engineering'
+				date='2016 - 2021'
+				imagePath=''
+				altText='Lorem, ipsum dolor sit'
+				imageClass='h-12 w-auto md:-left-16'
+			>
+				<ul class='ml-4 list-disc text-muted-foreground'>
+					<li>Won a full scholarship.</li>
+				</ul>
+			</Card>
+		</Section>
+
+		<Section title='Certifications'>
+			<Card
+				as='a'
+				heading='FCE - English Proficiency'
+				subheading='Cambridge University'
+				date='2016'
+				imagePath=''
+				altText=''
+				imageClass='h-11 w-auto md:-left-16'
+				href=''
+			/>
+		</Section>
+
+		<Section title='Skills'>
+			<SkillLayout title='Programming Languages' skills={planguages} />
+			<SkillLayout title='Frontend' skills={frontend} />
+			<SkillLayout title='Backend' skills={backend} />
+			<SkillLayout title='Others' skills={others} />
+			<SkillLayout title='Languages' skills={languages} />
+		</Section>
+	</div>
+</PageLayout>
